@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCart | Modern Shopping</title>
+    <meta
+      name="description"
+      content="NovaCart offers premium fashion, electronics, home essentials, and trending products at fantastic prices."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <div class="logo-wrap">
+          <div class="logo-mark">N</div>
+          <span>NovaCart</span>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+          <a href="#">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#featured">Featured</a>
+          <a href="#deals">Deals</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.97 12.8l4.3 4.3 1.4-1.4-4.3-4.3A7.5 7.5 0 1110.5 3zm0 2a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"/></svg>
+          </button>
+          <button class="icon-btn cart-btn" aria-label="Cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM6.2 6h14.4l-1.7 7.7A2 2 0 0117 15H9a2 2 0 01-1.9-1.5L5 4H3V2h3l.5 2.2L7 6zm2.4 9h8.7l1.1-5H7.6l1 5z"/></svg>
+            <span class="cart-count">3</span>
+          </button>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Fresh arrivals this week</span>
+            <h1>Shop smarter, look sharper.</h1>
+            <p>
+              Discover trending essentials, premium tech, and everyday favorites curated for your lifestyle.
+            </p>
+            <div class="hero-actions">
+              <a href="#featured" class="btn btn-primary">Shop now</a>
+              <a href="#categories" class="btn btn-secondary">Explore deals</a>
+            </div>
+            <ul class="hero-points">
+              <li>Free shipping over $50</li>
+              <li>Easy 30-day returns</li>
+              <li>Secure checkout</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="product-showcase">
+              <div class="showcase-card main-card">
+                <span class="tag">Best seller</span>
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80" alt="Smartwatch" />
+                <div class="showcase-info">
+                  <h3>Urban Smartwatch</h3>
+                  <div class="price-row">
+                    <strong>$249</strong>
+                    <span>$299</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-card floating-card-one">
+                <p>Up to 40% off</p>
+                <strong>New Collection</strong>
+              </div>
+
+              <div class="floating-card floating-card-two">
+                <p>4.9/5</p>
+                <strong>Customer rating</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brand-strip">
+        <div class="container brand-row">
+          <span>Apple</span>
+          <span>Samsung</span>
+          <span>Nike</span>
+          <span>Adidas</span>
+          <span>Amazon</span>
+          <span>Levi's</span>
+        </div>
+      </section>
+
+      <section class="categories" id="categories">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Browse by category</span>
+            <h2>Shop essentials for every moment</h2>
+          </div>
+          <a href="#" class="text-link">View all categories</a>
+        </div>
+
+        <div class="container category-grid">
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=900&q=80" alt="Fashion" />
+            <div class="category-content">
+              <h3>Fashion</h3>
+              <p>Trending looks</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="Electronics" />
+            <div class="category-content">
+              <h3>Electronics</h3>
+              <p>Smart tech</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Home decor" />
+            <div class="category-content">
+              <h3>Home</h3>
+              <p>Cozy upgrades</p>
+            </div>
+          </article>
+
+          <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Footwear" />
+            <div class="category-content">
+              <h3>Sneakers</h3>
+              <p>Everyday comfort</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured" id="featured">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Featured products</span>
+            <h2>Top picks for your lifestyle</h2>
+          </div>
+          <a href="#" class="text-link">See more</a>
+        </div>
+
+        <div class="container product-grid">
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=900&q=80" alt="Headphones" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Audio</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+              <h3>NoiseGuard Pro</h3>
+              <div class="price-row">
+                <strong>$129</strong>
+                <span>$169</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80" alt="Sneakers" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Footwear</span>
+                <span class="rating">★ 4.9</span>
+              </div>
+              <h3>Velocity Runner</h3>
+              <div class="price-row">
+                <strong>$140</strong>
+                <span>$190</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Chair" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Home</span>
+                <span class="rating">★ 4.7</span>
+              </div>
+              <h3>Orbit Lounge Chair</h3>
+              <div class="price-row">
+                <strong>$210</strong>
+                <span>$260</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Leather bag" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Accessories</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+              <h3>Everlane Tote</h3>
+              <div class="price-row">
+                <strong>$95</strong>
+                <span>$120</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=900&q=80" alt="Smartphone" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Tech</span>
+                <span class="rating">★ 4.9</span>
+              </div>
+              <h3>Aster X12</h3>
+              <div class="price-row">
+                <strong>$699</strong>
+                <span>$799</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="Watch" />
+              <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="product-topline">
+                <span>Wearables</span>
+                <span class="rating">★ 4.8</span>
+              </div>
+              <h3>Halo Watch</h3>
+              <div class="price-row">
+                <strong>$180</strong>
+                <span>$230</span>
+              </div>
+              <button class="add-cart">Add to cart</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="promo" id="deals">
+        <div class="container promo-box">
+          <div class="promo-copy">
+            <span class="eyebrow light">Weekend exclusive</span>
+            <h2>Save up to 60% on selected essentials.</h2>
+            <p>Explore premium quality without the premium price tag, only this weekend.</p>
+            <a href="#featured" class="btn btn-primary">Claim offer</a>
+          </div>
+          <div class="promo-visual">
+            <div class="promo-badge">-60%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="container section-heading">
+          <div>
+            <span class="eyebrow">Customer reviews</span>
+            <h2>Why shoppers trust NovaCart</h2>
+          </div>
+        </div>
+
+        <div class="container review-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“The quality is excellent and the order arrived faster than expected. I’ll definitely shop again.”</p>
+            <div class="reviewer">
+              <strong>Emma W.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“Clean design, secure checkout, and genuinely helpful customer service. It feels premium.”</p>
+            <div class="reviewer">
+              <strong>Marcus T.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>“I found the exact items I wanted and the price comparison made it easy to choose the best deal.”</p>
+            <div class="reviewer">
+              <strong>Sophia L.</strong>
+              <span>Verified buyer</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container newsletter-box">
+          <div>
+            <span class="eyebrow">Stay in the loop</span>
+            <h2>Sign up for exclusive discounts.</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="logo-wrap footer-logo">
+            <div class="logo-mark">N</div>
+            <span>NovaCart</span>
+          </div>
+          <p>Modern essentials, everyday value, and a better shopping experience.</p>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> NovaCart</span>
+        <span>Privacy Policy | Terms of Service</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
